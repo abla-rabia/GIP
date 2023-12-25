@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlutterFiesta</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#" onclick="smoothScroll('Home')">Home</a></li>
+            <li><a href="#" onclick="smoothScroll('About')">About</a></li>
+            <li><a href="#" onclick="smoothScroll('Why-Attend')">Why Attend FlutterFiesta?</a></li>
+            <li><a href="#" onclick="smoothScroll('Agenda')">Agenda</a></li>
+       </ul>
+    </div>
+    <div class="content">
+        <img src="{% static 'images/Donut.png' %}" id="Donut">
+        <div id="Home">
+            <div class="register-container">
+                <h1>FlutterFiesta</h1>
+                <img src="{% static 'images/Ellipse 5.png' %}" id="elipse1">
+                <img src="{% static 'images/Ellipse 5.png' %}" id="elipse2">
+                
+                    <p>Welcome to FlutterFiesta – A Celebration 
+                    Flutter Excellence!</p>
+                    <a href="{% url 'register_participant' %}">
+                         <button>Register Now</button>
+                    </a>
+            </div>
+            <img src="{% static 'images/Group 2.png' %}" id="Dash">
+            <img src="{% static 'images/sphere.png' %}" id="sphere">
+            <img src="{% static 'images/Cube.png' %}" id="cube">
+
+        </div>
+        <div id="About">
+            <h1>About Us</h1>
+            <img src="{% static 'images/Cylinder.png' %}" id="Cylinder">
+            <img src="{% static 'images/Ellipse 5.png' %}" id="elipse3">
+            <img src="{% static 'images/Ellipse 5.png' %}" id="elipse4">
+            <div class="About-container">
+                <img src="{% static 'images/Group_3.png' %}" id="Dash2">
+                <p>Join us for an immersive experience dedicated to all things Flutter!
+                     Whether you're a seasoned Flutter developer or just getting started,
+                      FlutterFiesta promises to be an event filled with knowledge-sharing,
+                       hands-on workshops, and exciting networking opportunities.</p>
+            </div>
+            <img src="{% static 'images/Ellipse 5.png' %}" id="elipse5">
+            <img src="{% static 'images/Ellipse 5.png' %}" id="elipse6">
+            <img src="{% static 'images/Ring.png' %}" id="Ring">
+        </div>
+        <div id="Why-Attend">
+            <img src="{% static 'images/shape.png' %}" id="shape">
+            <h1>Why Attend FlutterFiesta?</h1>
+            <img src="{% static 'images/Ring.png' %}" id="Ring2">
+            <img src="{% static 'images/Ellipse 5.png' %}" id="elipse7">
+            <div class="container">
+                <ul>
+                    <li><span>Stay updated on the latest Flutter
+                        trends and advancements.</span></li>
+                    <li><span>with like-minded Flutter enthusiasts and experts.</span> </li>
+                    <li><span>your Flutter skills through hands-on workshops and practical sessions.</span> </li>
+                </ul>
+                <img src="{% static 'images/Group_5.png' %}" id="Dash3">
+            </div>
+            <img src="{% static 'images/Line.png' %}" id="Line">
+
+        </div>
+        <div id="Agenda">
+            <h1>Agenda</h1>
+            <img src="{% static 'images/Gem.png' %}" id="Gem">
+            <img src="{% static 'images/Ellipse 5.png' %}" id="elipse8">
+            <img src="{% static 'images/Ellipse 5.png' %}" id="elipse9">
+            <img src="{% static 'images/Ellipse 5.png' %}" id="elipse10">
+            <ul>
+                <li class="mark1">9:00 AM - 10:00 AM<span>Opening Ceremony</span></li>
+                <li class="mark2">10:00 AM - 11:30 AM<span>Flutter Fundamentals Workshop</span> </li>
+                <li class="mark3">11:30 AM - 12:30 PM <span>Lunch Break and Networking</span></li>
+                <li class="mark1">12:30 PM - 2:00 PM <span>Advanced Flutter Techniques Workshop</span></li>
+                <li class="mark2">2:00 PM - 2:30 PM<span>Coffee Break</span></li>
+                <li class="mark3">2:30 PM - 4:00 PM<span>Keynote Address and Panel Discussion</span></li>
+                <li class="mark1">4:00 PM - 5:00 PM<span>Lightning Talks and Deep Dive Sessions</span></li>
+                <li class="mark2">5:00 PM - 6:00 PM<span>Workshop Recap, Q&A</span></li>
+                <li class="mark3">6:00 PM Onwards<span>After-Event Social and Networking</span></li>
+            </ul>
+        </div>
+       <div id="info">
+             <h1>Register Now to Secure Your Spot!</h1>
+             <img src="{% static 'images/infinity.png' %}" id="infinity">
+             <img src="{% static 'images/Ellipse 5.png' %}" id="elipse11">
+            <img src="{% static 'images/Ellipse 5.png' %}" id="elipse12">
+             <div class="container">
+                <p>Don't miss out on this incredible opportunity to be a part of the FlutterFiesta. Register now to secure your spot and embark on a journey of Flutter excellence!</p>
+                <div class="column">
+
+                    
+                    <div class="row">
+                        <img src="{% static 'images/calendar.png' %}" id="calendar">
+                        <p>March 15, 2024</p>
+                    </div>
+                    <div class="row">
+                        <img src="{% static 'images/Vector.png' %}" id="Vector">
+                        <p>Tech Hub Conference Center123 Innovation Avenue, Cityville</p>
+                    </div>
+                </div>
+            
+            </div>
+       </div>
+      
+    </div>
+   
+    <img src="{% static 'images/Double-circle.png' %}" id="Double-circle">
+</body>
+<script src="{% static 'js/index.js' %}"></script>
+</html>

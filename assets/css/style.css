@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+    
+    
+}
+
+body{
+    background: linear-gradient(251deg, #1C4769 11.1%, rgba(1, 49, 86, 0.46) 84.97%);
+    margin : 52px 150px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    
+} 
+
+.nav {
+    width: 60%;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    transform:  translate(-50%,-50%);
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    
+}
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.81rem;
+    letter-spacing: 0em;
+
+}
+
+
+
+#Home{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    position: relative;  
+
+}
+
+#Donut{
+    position: absolute;
+    left : -150px;
+    top : -1%;
+}
+
+.register-container{
+    margin-top: 184px;
+    width: 50%;
+    position: relative;
+}
+.register-container h1{
+    Width :100%;
+    margin-bottom: 52px;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 7.3rem;
+    letter-spacing: 0em;
+    background: linear-gradient(to right, #98DDFF ,  #EDA811 );
+    background-clip: text;
+    color: transparent; 
+}
+
+.register-container p{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    letter-spacing: 0em;
+    color: #fff;
+    text-align: left;
+}
+
+.register-container button{
+    width: 45%;
+    height: 77px;
+    padding: 20px, 32px, 20px, 32px;
+    border-radius: 34px;
+    margin-top:60px;
+    background: linear-gradient(to right,#719aac 5% , #EDA811 100%) ;
+    border: 0;
+    font-family: "Montserrat";
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 2.3rem;
+    letter-spacing: 0em;
+    color: #fff;
+    cursor: pointer; 
+}
+
+#Dash{
+    max-width:70%;
+    overflow: hidden;
+    position: absolute;
+    right:-13%;
+    bottom: 0;
+    z-index: -5;
+}
+
+#sphere{
+    max-width:30%; 
+    position: absolute;
+    top: 0;
+    right: -10%;
+}
+
+#cube{
+    max-width:40%;
+    position: absolute;
+    bottom: -40%;
+    left:-10%; 
+}
+#elipse1{
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+    top:-30%;
+    left:-30%;
+}
+
+#elipse2{
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+    bottom:-20%;
+    left:10%;
+
+}
+
+#About{
+    margin: 20% 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#About .About-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+#About h1{ 
+   font-size: 3.75rem;
+   font-weight: 700;
+   line-height: 5.31rem;
+   letter-spacing: 0em;
+   display: flex;
+   justify-content: center;
+   background: linear-gradient(to right, #98DDFF ,  #EDA811 );
+   background-clip: text;
+   color: transparent; 
+   
+}
+
+#Dash2{
+    Width:50%;
+    
+}
+
+#Cylinder{
+    position: absolute;
+    width: 15%;
+    right: 0;
+    top: 0;
+    
+}
+
+#Ring{
+    position: absolute;
+    width: 15%;
+    bottom: 0;
+    left:50%;
+}
+#About p{
+    
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 1.65rem;
+    font-weight: 400;
+    line-height: 2.43rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+
+
+}
+
+#Why-Attend{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+#Why-Attend .container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#Why-Attend h1{ 
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 5.31rem;
+    letter-spacing: 0em;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #98DDFF ,  #EDA811 );
+    background-clip: text;
+    color: transparent;    
+ }
+
+#Why-Attend ul{
+    font-size: 1.65rem;
+    font-weight: 400;
+    line-height: 2.43rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    list-style-type: none;
+}
+
+#Why-Attend li {
+    margin-bottom: 10px;
+    padding-left: 30px; 
+    position: relative; 
+}
+
+#Why-Attend li::before{
+    color: #DFC45D;
+    content: '•'; 
+    position: absolute;
+    font-size: 10rem; 
+    left: 0; 
+    top: 50%; 
+    transform: translate(-50%,-50%);
+    
+}
+
+#Dash3{
+    Width:60%;    
+}
+
+#shape{
+    position: absolute;
+    width: 15%;
+    top : -40%;
+    left:0;
+}
+
+
+
+#Ring2{
+    position: absolute;
+    width: 15%;
+    right: 0;
+    top: 10%;
+}
+
+#Line{
+    position: absolute;
+    width: 15%;
+    left:0;
+    bottom: -10%; 
+}
+
+#Agenda{
+    margin: 10% 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#Agenda h1{ 
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 5.31rem;
+    letter-spacing: 0em;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #98DDFF ,  #EDA811 );
+    background-clip: text;
+    color: transparent; 
+    
+ }
+
+ #Agenda ul{
+    margin-top: 100px;
+    font-size: 1.65rem;
+    font-weight: 400;
+    line-height: 2.43rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    list-style-type: none;
+}
+
+#Agenda li{
+    margin :20px;
+    position: relative;
+    padding-left: 20px;
+}
+
+#Agenda li span{
+    display:inline-block;
+    margin-left: 30%;
+   
+}
+
+#Agenda  li::before {
+    content: '•'; 
+    font-size: 5rem;
+    position: absolute;
+    left:0;
+    top: 32%; 
+    transform: translate(-50%,-50%);
+    
+  }
+
+#Agenda .mark1::before{
+    color: #DFC45D; 
+}
+
+#Agenda .mark2::before{
+    color: #29B6F6; 
+}
+
+#Agenda .mark3::before{
+    color: #01579B; 
+}
+
+#Agenda li::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left:0;
+    bottom: -20px;
+    width: 2px; 
+    background-color: #fff; 
+    z-index: -1; 
+  }
+
+#Gem{
+    position: absolute;
+    width: 25%;
+    right: 0;
+    top: -10%;
+}
+
+#info{
+    margin: 10% 0 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#info h1{ 
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 5.31rem;
+    letter-spacing: 0em;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #98DDFF ,  #EDA811 );
+    background-clip: text;
+    color: transparent; 
+    
+ }
+
+ #info .container{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#info p{
+    width: 50%;
+    margin-left: 5%;
+    font-size: 1.65rem;
+    font-weight: 400;
+    line-height: 2.43rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+#info .column{
+    width:50%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#info .row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom:50px;
+}
+
+#info .row img{
+    width: 60px;
+    height: 60px; 
+}
+
+#info .row p{
+    font-size: 1.3rem;
+}
+
+#infinity{
+    position: absolute;
+    width: 15%;
+    right: -10%;
+    top: 10%;
+}
+
+#Double-circle{
+    position: absolute;
+    width: 30%;
+    left : -150px;
+    bottom: -150px;
+}
+
+#elipse3{
+    width: 50%;
+    position: absolute;
+    z-index: -10;
+    bottom:-20%;
+    left:-20%;
+
+}
+
+#elipse4{
+    width: 50%;
+    position: absolute;
+    z-index: -10;
+    top:-5%;
+    left:10%;
+
+}
+
+#elipse5{
+    width: 60%;
+    position: absolute;
+    z-index: -10;
+    top:0;
+    left:40%;
+
+}
+
+#elipse6{
+    width: 60%;
+    position: absolute;
+    z-index: -10;
+    bottom:-20%;
+    left:70%;
+
+}
+#elipse7{
+    width: 80%;
+    position: absolute;
+    z-index: -10;
+    top:0;
+    left:10%;
+
+}
+#elipse8{
+    width: 70%;
+    position: absolute;
+    z-index: -10;
+    top:0;
+    left:10%;
+
+}
+#elipse9{
+    width: 70%;
+    position: absolute;
+    z-index: -10;
+    bottom:-40%;
+    left:60%;
+
+}
+#elipse10{
+    width: 70%;
+    position: absolute;
+    z-index: -10;
+    bottom:-50%;
+    left:-30%;
+
+}
+#elipse11{
+    width: 70%;
+    position: absolute;
+    z-index: -10;
+    top:-10%;
+    left:-30%;
+
+}
+#elipse12{
+    width: 70%;
+    position: absolute;
+    z-index: -10;
+    top:-10%;
+    left:30%;
+
+}
+

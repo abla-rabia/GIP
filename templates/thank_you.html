@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Remove default body margin */
+            overflow: hidden; /* Prevent body scrolling when the pop-up is displayed */
+        }
+    
+        .popup {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    
+        .popup-content {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    
+        .success-image {
+            max-width: 100%;
+            max-height: 100px;
+        }
+    
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+    <title>Success Pop-up</title>
+</head>
+<body>
+
+        <img src="{% static 'email.png' %}" alt="Success" class="success-image">
+        <p>Your registration has been submitted successfully!</p>
+
+
+
+</body>
+</html>

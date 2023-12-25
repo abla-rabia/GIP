@@ -1,0 +1,66 @@
+{% load static %}
+<!-- registration page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Registration</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <img src="{% static 'images/Donut.png' %}" id="Donut">
+    <div id="reg">
+        <div class="register-container2">
+            <h2>Participant Registration</h2>
+            <form method="post" action="{% url 'register_participant' %}" id="registrationForm">
+                {% csrf_token %}
+                <div class="cont1">
+                    <div class="cont11">
+                        <label style="color: #DFC45D; font-weight: bold; display: block;">Full Name</label>
+                        {{ form.name }}
+                    </div>
+                    <div class="cont11">
+                        <label style="color: #DFC45D; font-weight: bold; display: block;">Email</label>
+                        {{ form.email }}
+                    </div>
+                </div>
+                <br>
+                <div class="cont1">
+                    <div class="cont11">
+                        <label style="color: #DFC45D; font-weight: bold; display: block;">Discord ID</label>
+                        {{ form.discord_id }}
+                    </div>
+                    <div class="cont11">
+                        <label style="color: #DFC45D; font-weight: bold; display: block;">Organization</label>
+                        {{ form.organization }}
+                    </div>
+                </div>
+                <br>
+                <div class="cont1">
+                    <div class="cont11">
+                        <label style="color: #DFC45D; font-weight: bold; display: block;">Phone Number</label>
+                        {{ form.phone_number }}
+                    </div>
+                    <div class="cont11">
+                        <label style="color: #DFC45D; font-weight: bold; display: block;">How did you hear about us?</label>
+                        {{ form.how_did_you_hear }}
+                    </div>
+                </div>
+                <br>
+                <label style="color: #DFC45D; font-weight: bold; display: block;">Your Motivation</label>
+                {{ form.motivation }}
+                <br>
+                <div class="btn-container">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+            <img src="{% static 'images/Ellipse 5.png' %}" id="elipse1">
+            <img src="{% static 'images/Ellipse 5.png' %}" id="elipse2">
+        </div>
+        <img src="{% static 'images/sphere.png' %}" id="sphere">
+    </div>
+
+</body>
+</html>
